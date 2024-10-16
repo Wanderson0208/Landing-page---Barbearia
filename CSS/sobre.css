@@ -1,0 +1,80 @@
+@import url("cores.css");
+
+.about {
+
+    background-color: var(--primary-normal);
+    overflow: hidden;
+    color: var(--white-normal);
+
+}
+
+.about-contant {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+
+    padding: 34px 14px 64px 14px;
+
+}
+
+.about-contant div {
+
+    flex: 1;
+
+}
+
+.about-contant img {
+
+    max-width: 570px;
+    filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.188)); /* Adiciona a sombra */
+
+}
+
+.about-description h2 {
+
+    font-size: 36px;
+    margin-bottom: 16px;
+
+}
+
+.about-description p {
+
+    font-size: 18px;
+    line-height: 150%;
+
+}
+
+
+/*================//================//================*/
+
+/*   R E S P O N S I V I D A D E   */
+
+@media screen and ( max-width: 768px) {
+
+    .about-contant {
+
+        flex-direction: column;
+        gap: 40px;
+
+    }
+
+    .about-description {
+
+        padding: 0px 15px;
+    }
+
+    .about-description h2 {
+
+        text-align: center;
+
+    }
+
+    .about-description p {
+
+        text-align: justify;
+
+    }
+
+}
